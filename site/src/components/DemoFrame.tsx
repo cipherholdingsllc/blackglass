@@ -12,20 +12,20 @@ export default function DemoFrame({ exhibit, children }: DemoFrameProps) {
       <div className="demo-copy">
         <p className="eyebrow">{exhibit.title}</p>
         <h3>{exhibit.purpose}</h3>
-        <dl>
-          <div>
+        <dl className="fact-grid">
+          <div className="fact-card">
             <dt>Why it exists</dt>
             <dd>{exhibit.why}</dd>
           </div>
-          <div>
+          <div className="fact-card">
             <dt>Visual state</dt>
             <dd>{exhibit.state}</dd>
           </div>
-          <div>
+          <div className="fact-card">
             <dt>Accessibility note</dt>
             <dd>{exhibit.accessibility}</dd>
           </div>
-          <div>
+          <div className="fact-card">
             <dt>Do not use when</dt>
             <dd>{exhibit.avoid}</dd>
           </div>

@@ -14,13 +14,17 @@ Core line: AI can generate screens. Taste still has to be designed.
 - token notes
 - static Vite + React + TypeScript gallery
 - 10 named Blackglass exhibits
+- desktop exhibit navigator
+- compact "Why this exists" narrative cards
+- screenshot-ready capture cards
+- public boundary trust band
 - example notes for each exhibit
 - redaction report
 
 ## Known Gaps
 
 - hosted demo link is not live yet
-- screenshots are placeholder slots until captured from the rendered site
+- screenshots still need to be captured from the rendered site for the repo assets folder
 - no broad contribution model yet
 - no packaged component distribution
 

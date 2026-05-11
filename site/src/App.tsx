@@ -17,6 +17,62 @@ import { exhibitById, exhibits } from "./data/exhibits";
 import { glassTiers, colorTokens } from "./data/tokens";
 import { principles, signalGrammar } from "./data/principles";
 
+const navItems = [
+  { label: "Hero", href: "#hero" },
+  { label: "Thesis", href: "#thesis" },
+  { label: "Gallery", href: "#exhibits" },
+  { label: "Command Deck", href: "#command-deck" },
+  { label: "Signal Map", href: "#signal-node-map" },
+  { label: "Tokens", href: "#tokens" },
+  { label: "Anti-Slop", href: "#anti-slop" },
+  { label: "Capture Slots", href: "#capture-slots" },
+];
+
+const whyCards = [
+  {
+    title: "Signal-heavy software needs hierarchy.",
+    copy: "Dense context has to resolve into focus, state, and next motion.",
+    tone: "cyan",
+  },
+  {
+    title: "Glass must earn its existence.",
+    copy: "Material only stays when it clarifies depth, boundary, or decision.",
+    tone: "amber",
+  },
+  {
+    title: "Taste has to survive AI generation.",
+    copy: "Tokens, names, and artifacts keep fast screens from drifting.",
+    tone: "purple",
+  },
+];
+
+const captureCards = [
+  {
+    title: "Hero Screenshot Card",
+    copy: "Suggested capture: hero + command deck",
+    tone: "cyan",
+    type: "hero",
+  },
+  {
+    title: "Exhibit Grid Screenshot Card",
+    copy: "Suggested capture: ten named exhibits",
+    tone: "purple",
+    type: "grid",
+  },
+  {
+    title: "Trust Surface Screenshot Card",
+    copy: "Suggested capture: confidence + source cues",
+    tone: "green",
+    type: "trust",
+  },
+  {
+    title: "Boundary Panel Screenshot Card",
+    copy: "Suggested capture: calm blocked state",
+    tone: "red",
+    type: "boundary",
+  },
+];
+
 const demoComponents = [
   { id: "command-deck", node: <CommandDeck /> },
   { id: "glass-gate-card", node: <GlassGateCard /> },
@@ -33,6 +89,15 @@ const demoComponents = [
 export default function App() {
   return (
     <main>
+      <nav className="exhibit-nav" aria-label="Blackglass exhibit navigation">
+        {navItems.map((item) => (
+          <a href={item.href} key={item.href}>
+            <span aria-hidden="true" />
+            {item.label}
+          </a>
+        ))}
+      </nav>
+
       <Hero />
 
       <section className="thesis-band" id="thesis">
@@ -42,6 +107,26 @@ export default function App() {
           Blackglass turns premium dark interface taste into reusable doctrine, tokens, exhibits,
           and screenshot-ready patterns.
         </p>
+      </section>
+
+      <section className="section why-section" id="why">
+        <div className="section-heading compact-heading">
+          <p className="eyebrow">Why this exists</p>
+          <h2>Visual discipline for dense work.</h2>
+        </div>
+        <div className="why-grid">
+          {whyCards.map((card) => (
+            <article className={`why-card tone-${card.tone}`} key={card.title}>
+              <div className="why-motif" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </div>
+              <h3>{card.title}</h3>
+              <p>{card.copy}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="section" id="exhibits">
@@ -84,9 +169,14 @@ export default function App() {
         <div className="tier-grid">
           {glassTiers.map((tier) => (
             <div className={`tier-card tier-${tier.tier.toLowerCase()}`} key={tier.tier}>
+              <div className="tier-visual" aria-hidden="true">
+                <span />
+                <span />
+              </div>
               <span>{tier.tier}</span>
-              <strong>{tier.job}</strong>
-              <p>{tier.intensity}</p>
+              <strong>{tier.purpose}</strong>
+              <p>Use: {tier.use}</p>
+              <p>Skip: {tier.avoid}</p>
             </div>
           ))}
         </div>
@@ -131,7 +221,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section" id="tokens">
         <div className="section-heading">
           <p className="eyebrow">Tokens</p>
           <h2>Public-safe constraints</h2>
@@ -143,7 +233,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="anti-slop">
+      <section className="anti-slop" id="anti-slop">
         <div>
           <p className="eyebrow">Anti-slop gate</p>
           <h2>No fake data. No decorative blur. No generic AI gloss.</h2>
@@ -155,19 +245,34 @@ export default function App() {
         </ul>
       </section>
 
-      <section className="section gallery-area">
+      <section className="section gallery-area" id="capture-slots">
         <div className="section-heading">
           <p className="eyebrow">Screenshot-ready gallery</p>
-          <h2>Reserved capture slots</h2>
-          <p>Use these slots for rendered screenshots after local visual review.</p>
+          <h2>Capture-ready surfaces</h2>
+          <p>Each card is already composed as a public-safe screenshot target.</p>
         </div>
         <div className="screenshot-grid">
-          {["Hero", "Exhibit Grid", "Trust Surface", "Boundary Panel"].map((slot) => (
-            <div className="screenshot-slot" key={slot}>
-              <span>{slot}</span>
-              <strong>Capture pending</strong>
+          {captureCards.map((card) => (
+            <div className={`screenshot-slot screenshot-${card.type} tone-${card.tone}`} key={card.title}>
+              <div className="shot-composition" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+                <span />
+              </div>
+              <span>{card.title}</span>
+              <strong>{card.copy}</strong>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="public-band" aria-label="Public boundary">
+        <strong>Public lab. Synthetic content. No private product claims.</strong>
+        <div>
+          <span>Synthetic data</span>
+          <span>No backend</span>
+          <span>No private context</span>
         </div>
       </section>
 

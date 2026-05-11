@@ -1,6 +1,6 @@
 # Screen Gallery
 
-Screenshots are planned as launch artifacts after the local site is verified.
+The v0.3 site includes real screenshot-ready capture cards. The files in `assets/screenshots/` should be captured from the rendered site after final visual review.
 
 ## Required Captures
 
@@ -13,6 +13,7 @@ Screenshots are planned as launch artifacts after the local site is verified.
 | Timeline Rail | sequence pattern |
 | Trust Surface | source and confidence pattern |
 | Boundary Panel | calm blocked state |
+| Capture Cards | README and launch previews |
 
 ## Rules
 

@@ -2,7 +2,7 @@ import CommandDeck from "./CommandDeck";
 
 export default function Hero() {
   return (
-    <header className="hero">
+    <header className="hero" id="hero">
       <div className="hero-copy">
         <p className="eyebrow">Public visual lab</p>
         <h1>Blackglass</h1>

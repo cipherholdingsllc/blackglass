@@ -6,9 +6,30 @@ AI can generate screens. Taste still has to be designed.
 
 Blackglass is a public visual lab for liquid glass, signal grammar, timeline interfaces, trust surfaces, command decks, and anti-slop design doctrine. It is built to show how dense context can feel calm, sharp, trustworthy, and alive without becoming a generic dark dashboard.
 
+## V0.3 Status
+
+Blackglass v0.3 is screenshot-ready: a static museum gallery with ten named exhibits, compact doctrine, a sticky desktop exhibit navigator, real capture-card surfaces, and a public boundary band.
+
 ## Live Demo
 
 Coming soon.
+
+Local preview:
+
+```bash
+cd site
+npm install
+npm run build
+npm run preview
+```
+
+Deployment placeholder: connect a static host to `site/` when ready. GitHub Pages or Vercel can serve the built gallery without adding runtime services.
+
+## Why This Exists
+
+Signal-heavy software needs hierarchy. Glass must earn its existence. Taste has to survive AI generation.
+
+Blackglass turns those constraints into a public, inspectable visual lab: named exhibits, semantic tokens, screenshot-ready compositions, and rejection rules for generic AI gloss.
 
 ## What This Is
 
@@ -50,7 +71,7 @@ Blackglass is not:
 
 ## Screenshot Gallery
 
-Screenshots are reserved for launch review.
+The v0.3 site includes composed screenshot-ready cards instead of empty capture placeholders.
 
 | Slot | Target |
 |---|---|
@@ -87,6 +108,8 @@ Accent meanings:
 ## Public Boundary
 
 Blackglass uses public-safe language and synthetic demo content. It does not include private strategy, personal context, sensitive examples, live integrations, or copied implementation details from private work.
+
+Boundary reminder: public lab, synthetic content, no private product claims.
 
 See [PUBLIC_BOUNDARY.md](PUBLIC_BOUNDARY.md) before publishing screenshots, examples, or copy.
 
