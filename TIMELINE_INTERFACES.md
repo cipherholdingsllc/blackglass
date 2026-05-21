@@ -1,14 +1,14 @@
 # Timeline Interfaces
 
-Complex context often makes more sense through sequence than through dashboards.
+Complex mobile context often makes more sense through sequence than through dashboards.
 
 ## Patterns
 
-- Active Road: done, now, next
-- Milestone Rail: major progress markers
-- Event Clusters: grouped moments with context
-- Context Bands: slow-changing background state
-- Before / After Continuity: what changed and why it matters
+- Active Road: done, now, next.
+- Event Stack: grouped items with source and time.
+- Context Band: slow-changing background state.
+- Progress Rail: short step sequence for setup or review.
+- Detail Sheet: event context without leaving the screen.
 
 ## Interface Question
 
@@ -21,5 +21,6 @@ What changed, when, and why does it matter now?
 - Show current position clearly.
 - Keep past state visible without overloading the present.
 - Make next action obvious.
-- Do not imply live activity unless it is truly live.
+- Use source badges for event origin.
+- Use dot patterns or labels with color for status.
 - Use motion to show progression, not excitement.

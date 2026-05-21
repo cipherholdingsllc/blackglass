@@ -1,18 +1,18 @@
 # Trust Surfaces
 
-Trust is an interface pattern.
+Trust is visible structure.
 
-Blackglass treats trust as visible structure: source labels, confidence language, read-only boundaries, explanation lines, and ownership cues.
+Blackglass treats trust as an interface pattern: source labels, confidence language, explanation lines, freshness markers, and boundary cues.
 
 ## Surface Elements
 
 - source label
 - confidence tag
-- explanation line
-- last reviewed marker
+- context line
+- last updated marker
 - read-only or editable state
 - boundary statement
-- owner or source-of-truth cue
+- source-of-truth cue
 
 ## Rules
 
@@ -21,7 +21,8 @@ Blackglass treats trust as visible structure: source labels, confidence language
 - Show why a surface matters.
 - Separate source, interpretation, and action.
 - Keep blocked states calm.
+- Never ask for action before source and limit cues are clear.
 
 ## Example Pattern
 
-A Trust Surface Card should tell the viewer what the information is, where it came from in generic terms, how stable it is, and what action is appropriate.
+A Trust Row should tell the user what the information is, where it came from in generic terms, how stable it is, and what action is appropriate.

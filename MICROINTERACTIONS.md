@@ -5,26 +5,31 @@ Blackglass motion is restrained. It should explain state, not decorate the scree
 ## Approved Motions
 
 - press response
-- rail progression
-- node pulse
-- liquid snap
-- saved state
-- sheet materialization
+- sheet slide
 - focus reveal
+- saved state
+- progress step
+- capture waveform or pulse when input is active
 
 ## Rejected Motions
 
 - confetti
-- casino loops
-- fake urgency
+- sparkle bursts
+- fake urgency loops
 - endless shimmer
 - idle glitter
+- hover-only effects in mobile patterns
 - large motion for small meaning
 
 ## Timing
 
-Fast interactions should feel immediate. Larger transitions should be calm and short. Respect reduced-motion settings.
+Use the motion scale:
+
+- `150ms` for press response
+- `200ms` for small reveal
+- `300ms` for sheet transition
+- `450ms` for one-shot progress reveal
 
 ## Test
 
-If the animation disappeared, would the interface still make sense? If not, add static cues. If yes but the motion adds no clarity, remove it.
+If the animation disappears, the interface should still make sense. If motion adds no state clarity, remove it.

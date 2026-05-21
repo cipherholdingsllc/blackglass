@@ -1,31 +1,35 @@
 # Component Patterns
 
-Blackglass components are exhibits first. Each one needs a name, a job, a state model, and a rejection rule.
+Blackglass patterns are mobile reference surfaces. Each pattern needs a name, a job, a state model, an invariant, and a rejection rule.
 
 ## Pattern Requirements
 
-Each exhibit includes:
+Each pattern includes:
 
 - title
 - one-line purpose
-- why it exists
-- visual state
+- supported states
+- invariant
 - accessibility note
-- do not use when note
+- do-not-use-when note
 
-## The Ten Exhibits
+## Implemented Pattern Set
 
-1. Command Deck
-2. Glass Gate Card
-3. System Pulse Strip
-4. Decision Queue
-5. Active Road Rail
-6. Signal Node Map
-7. Blackglass Button
-8. Trust Surface Card
-9. Timeline Event Rail
-10. Boundary Panel
+| Pattern | Purpose |
+|---|---|
+| Mobile Screen Shell | Safe-area layout, dark base, and thumb-zone action placement |
+| Glass Surface Card | Functional material tier comparison |
+| Mobile Action Button | Touch-sized command control |
+| Capture Control | Large high-value input control |
+| Timeline Event | Sequence item with source, status, and detail affordance |
+| Bottom Sheet Preview | Context-preserving disclosure layer |
+| Trust Row | Source, context, confidence, and limit cues |
+| Empty State | Calm zero-state with one next action |
 
 ## Naming Rule
 
-Avoid names like `CardDemo`, `Example1`, or `Panel2`. Blackglass names should feel intentional and collectible.
+Avoid names like `CardDemo`, `Example1`, or `Panel2`. Names should describe the interface job, not the decoration.
+
+## Promotion Rule
+
+If a visual idea appears twice, promote it into a named token or pattern. If it appears once and has no clear job, delete it.

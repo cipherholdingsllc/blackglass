@@ -1,141 +1,29 @@
 # Blackglass
 
-Premium dark interface patterns for complex, signal-heavy software.
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Static Site](https://img.shields.io/badge/site-static-green.svg)
+![Mobile First](https://img.shields.io/badge/design-mobile--first-teal.svg)
 
-AI can generate screens. Taste still has to be designed.
+Blackglass is a public mobile interface design reference for building calm, premium, touch-first apps with disciplined liquid glass, semantic tokens, restrained motion, and trust-forward surfaces.
 
-Blackglass is a public visual lab for liquid glass, signal grammar, timeline interfaces, trust surfaces, command decks, and anti-slop design doctrine. It is built to show how dense context can feel calm, sharp, trustworthy, and alive without becoming a generic dark dashboard.
+[**View the Interactive Pattern Gallery**](https://blackglass-demo.cipherholdings.com) *(Placeholder)*
 
-## V0.3 Status
+It is not a production app, backend, account system, analytics layer, or packaged component library. It is a compact reference for builders who want mobile screens that feel deliberate instead of generated, generic, or overdecorated.
 
-Blackglass v0.3 is screenshot-ready: a static museum gallery with ten named exhibits, compact doctrine, a sticky desktop exhibit navigator, real capture-card surfaces, and a public boundary band.
+## Why Blackglass?
 
-## Live Demo
+Most design systems ask, "How do we make UI consistent?" Blackglass asks, "How do we make complex mobile workflows feel calm, premium, touch-native, and trustworthy?" By encoding taste into strict rules—glass that only appears to clarify state, targets that are always 44px+, and semantic colors that never act alone—Blackglass helps teams build interfaces that look like intentional instruments rather than generated dashboards.
 
-Coming soon.
+## What This Teaches
 
-Local preview:
+- Mobile-first screen structure with safe-area discipline and thumb-zone actions.
+- Functional liquid glass tiers: `whisper`, `present`, and `prominent`.
+- Semantic tokens for color, spacing, radius, elevation, motion, tap targets, typography, and breakpoints.
+- Trust-forward interface patterns for source, context, confidence, and boundary states.
+- Touch-sized controls with clear state models.
+- Anti-slop review rules for fast AI-assisted builds.
 
-```bash
-cd site
-npm install
-npm run build
-npm run preview
-```
-
-Deployment placeholder: connect a static host to `site/` when ready. GitHub Pages or Vercel can serve the built gallery without adding runtime services.
-
-## Why This Exists
-
-Signal-heavy software needs hierarchy. Glass must earn its existence. Taste has to survive AI generation.
-
-Blackglass turns those constraints into a public, inspectable visual lab: named exhibits, semantic tokens, screenshot-ready compositions, and rejection rules for generic AI gloss.
-
-## What This Is
-
-Blackglass is a museum-style gallery of named interface exhibits:
-
-- reusable visual doctrine for dark, premium software
-- interactive examples with synthetic demo content
-- semantic tokens for signal, decision, trust, and boundary states
-- a screenshot-ready surface for showing taste quickly
-- a public reference for AI-era design discipline
-
-## What This Is Not
-
-Blackglass is not:
-
-- a production application
-- a server system
-- an identity system
-- a data platform
-- a live telemetry surface
-- a generic component dump
-- a neon glassmorphism kit
-- a copy of any private work
-
-## Exhibit Preview
-
-| Exhibit | Purpose | Visual State |
-|---|---|---|
-| Command Deck | High-level operational surface | Focused command cockpit |
-| Glass Gate Card | Current decision surface | Amber waiting state |
-| System Pulse Strip | Compact status rail | Semantic signal strip |
-| Decision Queue | Prioritized choices | Required / next / optional |
-| Active Road Rail | Sequence and momentum | Done / now / next |
-| Signal Node Map | Provenance-style relationships | Active signal graph |
-| Blackglass Button | Functional glass control | Pressed edge bloom |
-| Trust Surface Card | Confidence and source surface | Verified context |
-| Timeline Event Rail | Longitudinal context | Clustered event rail |
-| Boundary Panel | Calm blocked state | Red boundary surface |
-
-## Screenshot Gallery
-
-The v0.3 site includes composed screenshot-ready cards instead of empty capture placeholders.
-
-| Slot | Target |
-|---|---|
-| Hero | Command Deck above the fold |
-| Gallery | Ten exhibit grid |
-| Detail | Trust Surface and Boundary Panel |
-| Motion | Active Road Rail and Signal Node Map |
-
-## Core Principles
-
-- Clarity beats decoration.
-- Glass must earn its existence.
-- Status colors must mean something.
-- Motion should explain state.
-- Trust is an interface pattern.
-- Timelines beat dashboards for evolving context.
-- No fake live data.
-- No one-off styling.
-- No generic AI slop.
-
-## Visual Language Preview
-
-Blackglass uses an obsidian base, graphite glass surfaces, ivory text, semantic accents, crisp borders, restrained glow, and cinematic depth. The system favors calm density over ornamental blur.
-
-Accent meanings:
-
-- Cyan: active signal or focus
-- Amber: decision or waiting state
-- Green: verified or stable state
-- Red: boundary or blocked state
-- Purple: abstract or system-level state
-- Slate: deferred or quiet state
-
-## Public Boundary
-
-Blackglass uses public-safe language and synthetic demo content. It does not include private strategy, personal context, sensitive examples, live integrations, or copied implementation details from private work.
-
-Boundary reminder: public lab, synthetic content, no private product claims.
-
-See [PUBLIC_BOUNDARY.md](PUBLIC_BOUNDARY.md) before publishing screenshots, examples, or copy.
-
-## Repo Map
-
-```text
-README.md                 Public front door
-BLACKGLASS_THESIS.md      Core thesis
-AI_DESIGN_DOCTRINE.md     AI-era design discipline
-VISUAL_LANGUAGE.md        Aesthetic rules
-LIQUID_GLASS.md           Functional glass rules
-SIGNAL_GRAMMAR.md         Semantic color and status
-TIMELINE_INTERFACES.md    Time and sequence patterns
-TRUST_SURFACES.md         Provenance-style UI
-MICROINTERACTIONS.md      Motion and response rules
-ANTI_SLOP.md              Quality blacklist
-TOKENS.md                 Public design tokens
-COMPONENT_PATTERNS.md     Exhibit pattern notes
-ACCESSIBILITY.md          Accessibility rules
-SCREEN_GALLERY.md         Screenshot plan
-site/                     Static Vite gallery
-examples/                 Exhibit notes
-assets/                   Screenshot and visual slots
-```
-
-## Local Development
+## Local Preview
 
 ```bash
 cd site
@@ -144,6 +32,57 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+The gallery is static. It has no backend, account flow, tracking script, or live integration.
+
+## Pattern Set
+
+| Pattern | Job |
+|---|---|
+| Mobile Screen Shell | Safe area, dark base, content rhythm, and lower-screen action placement |
+| Glass Surface Card | Functional material tiers without decorative blur |
+| Mobile Action Button | Primary, secondary, ghost, disabled, and loading states |
+| Capture Control | Large touch-first control for high-value input moments |
+| Timeline Event | Sequence, source badge, timestamp, status dots, and detail affordance |
+| Bottom Sheet Preview | Disclosure without losing screen context |
+| Trust Row | Source, context, confidence, and ownership cues |
+| Empty State | Calm zero-state with one next action |
+
+## Core Rules
+
+- Tokens first. Raw colors, spacing, shadows, and timing values belong in the token catalog.
+- Touch first. Minimum tap target is `44px`; primary actions are `56px`; prominent capture controls are `72px`.
+- Glass must do work. Use it for hierarchy, focus, boundary, or state. Remove it when it is only decoration.
+- Motion explains state. Press, reveal, save, and sheet transitions are valid. Idle shimmer, fake urgency, and celebration effects are not.
+- Trust is visible structure. Show source, context, confidence, uncertainty, and limits directly in the UI.
+- Demo content stays synthetic and domain-neutral.
+
+## Repo Map
+
+```text
+README.md                 Public front door
+MOBILE_DESIGN_SYSTEM.md   Central mobile design doctrine
+BLACKGLASS_THESIS.md      Core thesis
+VISUAL_LANGUAGE.md        Visual direction
+LIQUID_GLASS.md           Mobile material rules
+TIMELINE_INTERFACES.md    Sequence patterns
+TRUST_SURFACES.md         Source and confidence UI
+MICROINTERACTIONS.md      Motion and response rules
+ANTI_SLOP.md              Quality gate and rejections
+TOKENS.md                 Public token catalog
+COMPONENT_PATTERNS.md     Pattern contracts
+ACCESSIBILITY.md          Mobile accessibility rules
+PUBLIC_BOUNDARY.md        Publication boundary
+site/                     Static Vite gallery
+examples/                 Pattern notes
+assets/                   Screenshot and visual slots
+```
+
+## Public Boundary
+
+Blackglass uses public-safe language, synthetic content, and generic interface patterns. It does not include sensitive examples, live integrations, internal strategy, personal context, non-public implementation details, or copied product material.
+
+See [PUBLIC_BOUNDARY.md](PUBLIC_BOUNDARY.md) before publishing screenshots, examples, or copy.
 
 ## License
 
