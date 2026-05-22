@@ -8,6 +8,12 @@ Blackglass is a public mobile interface design reference for building calm, prem
 
 [**View the Interactive Pattern Gallery**](https://blackglass-three.vercel.app/)
 
+## Preview
+
+![Blackglass hero preview](assets/blackglass-hero.png)
+
+![Blackglass pattern gallery preview](assets/blackglass-patterns.png)
+
 It is not a production app, backend, account system, analytics layer, or packaged component library. It is a compact reference for builders who want mobile screens that feel deliberate instead of generated, generic, or overdecorated.
 
 ## Why Blackglass?
