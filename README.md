@@ -6,7 +6,7 @@
 
 Blackglass is a public mobile interface design reference for building calm, premium, touch-first apps with disciplined liquid glass, semantic tokens, restrained motion, and trust-forward surfaces.
 
-[**View the Interactive Pattern Gallery**](https://blackglass-demo.cipherholdings.com) *(Placeholder)*
+[**View the Interactive Pattern Gallery**](https://blackglass-three.vercel.app/)
 
 It is not a production app, backend, account system, analytics layer, or packaged component library. It is a compact reference for builders who want mobile screens that feel deliberate instead of generated, generic, or overdecorated.
 
@@ -62,8 +62,6 @@ The gallery is static. It has no backend, account flow, tracking script, or live
 ```text
 README.md                 Public front door
 MOBILE_DESIGN_SYSTEM.md   Central mobile design doctrine
-BLACKGLASS_THESIS.md      Core thesis
-VISUAL_LANGUAGE.md        Visual direction
 LIQUID_GLASS.md           Mobile material rules
 TIMELINE_INTERFACES.md    Sequence patterns
 TRUST_SURFACES.md         Source and confidence UI
@@ -73,6 +71,8 @@ TOKENS.md                 Public token catalog
 COMPONENT_PATTERNS.md     Pattern contracts
 ACCESSIBILITY.md          Mobile accessibility rules
 PUBLIC_BOUNDARY.md        Publication boundary
+REDACTION_REPORT.md       Public-safety cleanup proof
+CHANGELOG.md              Change history
 site/                     Static Vite gallery
 examples/                 Pattern notes
 assets/                   Screenshot and visual slots
