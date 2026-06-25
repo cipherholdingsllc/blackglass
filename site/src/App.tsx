@@ -20,13 +20,13 @@ const navItems = [
 
 const patterns: Pattern[] = [
   {
-    id: "mobile-screen-shell",
-    title: "Mobile Screen Shell",
-    purpose: "Safe-area layout, dark base, compact context, and thumb-zone action placement.",
+    id: "screen-shell",
+    title: "Screen Shell",
+    purpose: "Dark base, clear hierarchy, content rhythm, and primary action placement.",
     states: ["loading", "empty", "success", "blocked"],
     invariant: "The primary object and primary action are clear within three seconds.",
     accessibility: "Uses semantic regions, readable contrast, and stable action placement.",
-    avoid: "Do not use a web dashboard grid as the first mobile structure.",
+    avoid: "Do not default to web dashboard grids or sprawl.",
     tone: "teal",
   },
   {
@@ -40,11 +40,11 @@ const patterns: Pattern[] = [
     tone: "green",
   },
   {
-    id: "mobile-action-button",
-    title: "Mobile Action Button",
-    purpose: "Touch-sized command control for primary, secondary, and quiet actions.",
+    id: "action-button",
+    title: "Action Button",
+    purpose: "Properly sized command control for primary, secondary, and quiet actions.",
     states: ["default", "pressed", "disabled", "loading"],
-    invariant: "Primary actions are at least 56px tall and stay in the reachable lower screen.",
+    invariant: "Primary actions are sized for their role and stay prominent.",
     accessibility: "Uses native button semantics, visible focus, and text labels.",
     avoid: "Do not use tiny icon-only controls for critical actions.",
     tone: "green",
@@ -52,9 +52,9 @@ const patterns: Pattern[] = [
   {
     id: "capture-control",
     title: "Capture Control",
-    purpose: "A 72px prominent input control for high-value capture moments.",
+    purpose: "A prominent input control for high-value capture moments.",
     states: ["idle", "active", "paused", "review", "disabled"],
-    invariant: "The control never drops below 72px and every state has a plain label.",
+    invariant: "The control is sized for importance and every state has a plain label.",
     accessibility: "State is conveyed through label, icon shape, color, and size.",
     avoid: "Do not hide important capture states behind animation alone.",
     tone: "teal",
@@ -76,7 +76,7 @@ const patterns: Pattern[] = [
     states: ["closed", "open", "saving", "error"],
     invariant: "The sheet never hides the parent context or primary escape path.",
     accessibility: "Includes heading, focus trap expectations, and a visible dismiss affordance.",
-    avoid: "Do not use a full-screen takeover for small detail review.",
+    avoid: "Do not use a full takeover for small detail review.",
     tone: "amber",
   },
   {
@@ -125,7 +125,7 @@ const qualityChecks = [
 
 function PhonePreview() {
   return (
-    <div className="phone-frame" aria-label="Mobile design preview">
+    <div className="phone-frame" aria-label="Design preview">
       <div className="phone-speaker" aria-hidden="true" />
       <div className="phone-screen">
         <div className="screen-status">
@@ -186,7 +186,7 @@ function PatternCard({ pattern }: { pattern: Pattern }) {
             <div className="glass-box-prominent" />
           </div>
         );
-      case "mobile-action-button":
+      case "action-button":
         return (
           <div className="demo-bg-deep">
             <button className="button-link primary" style={{ flex: 1 }}>Primary</button>
@@ -281,11 +281,10 @@ export default function App() {
 
       <section className="hero-section" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Public mobile design reference</p>
-          <h1>Calm glass patterns for dense mobile workflows.</h1>
+          <p className="eyebrow">Black Glass design system</p>
+          <h1>Calm, premium, trust-forward interfaces.</h1>
           <p>
-            Blackglass teaches touch-first hierarchy, semantic tokens, restrained motion, and
-            trust-forward surfaces through a static, synthetic pattern gallery.
+            Blackglass is the coded design system for turning dense context into clear, tactile surfaces with functional liquid glass, semantic tokens, and visible trust.
           </p>
           <div className="hero-actions" aria-label="Primary links">
             <a className="button-link primary" href="#patterns">
@@ -301,7 +300,7 @@ export default function App() {
 
       <section className="principle-band" aria-label="Blackglass principles">
         <span>Tokens first</span>
-        <span>Touch sized</span>
+        <span>Intent sized</span>
         <span>Glass with a job</span>
         <span>Trust visible</span>
       </section>
@@ -309,7 +308,7 @@ export default function App() {
       <section className="section" id="patterns">
         <div className="section-heading">
           <p className="eyebrow">Pattern set</p>
-          <h2>Mobile jobs, not decoration.</h2>
+          <h2>Jobs, not decoration.</h2>
           <p>
             Each pattern defines its purpose, states, invariant, accessibility expectation, and
             rejection rule.
@@ -325,10 +324,10 @@ export default function App() {
       <section className="section split-section" id="tokens">
         <div className="section-heading">
           <p className="eyebrow">Tokens</p>
-          <h2>Constraints that keep mobile screens from drifting.</h2>
+          <h2>Constraints that keep interfaces from drifting.</h2>
           <p>
             Values are semantic and compact: colors, spacing, radius, motion, typography, tap
-            targets, and phone breakpoints.
+            targets, and breakpoints.
           </p>
         </div>
         <div className="token-grid">
@@ -385,7 +384,7 @@ export default function App() {
 
       <footer>
         <span>Blackglass</span>
-        <span>Mobile interface reference for touch-first, trust-forward design.</span>
+        <span>Black Glass design system for calm, premium, trust-forward interfaces.</span>
       </footer>
     </main>
   );
